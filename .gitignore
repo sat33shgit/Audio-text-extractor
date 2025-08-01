@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Audio files (optional - you might want to exclude large audio files)
+*.mp3
+*.wav
+*.flac
+*.m4a
+*.aac
+*.ogg
+*.webm
+
+# Transcript files (these will be generated)
+*_transcript.txt
+*_whisper_transcript.txt
+
+# Temporary files
+temp_chunk_*.wav
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Whisper model cache (these can be large)
+~/.cache/whisper/
