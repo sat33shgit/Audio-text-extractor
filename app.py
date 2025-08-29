@@ -89,6 +89,7 @@ def download_audio(url):
             'preferredcodec': 'mp3',
             'preferredquality': '192',
         }],
+        'cookiefile': 'cookies.txt',  
         'quiet': True,
     }
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
