@@ -15,4 +15,4 @@ def download_audio(url):
         ydl.download([url])
 
 # Example usage
-download_audio('https://www.youtube.com/watch?v=ZGVgxC92dtY')
+download_audio('https://youtu.be/0oH9zS6Lufw?si=Hpx7Gwu8KCdPzD-b')

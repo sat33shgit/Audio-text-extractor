@@ -1,3 +1,50 @@
+# YouTube Audio Extractor (Flask) on Render.com
+
+This project lets you extract audio (MP3) from YouTube videos using a simple web interface, powered by Flask and yt-dlp.
+
+## Features
+- Paste a YouTube URL and download the audio as MP3
+- Clean Bootstrap UI with progress bar
+- Ready for deployment on Render.com (free tier supported)
+
+## Quick Start (Local)
+1. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+2. Run the app:
+   ```
+   python app.py
+   ```
+3. Open your browser at [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
+
+## Deploy to Render.com
+1. Push your code to a GitHub repository.
+2. Go to [https://dashboard.render.com/](https://dashboard.render.com/)
+3. Click "New +" → "Web Service" and connect your repo.
+4. Render will auto-detect your Flask app (using `render.yaml`).
+5. Click "Create Web Service" and wait for deployment.
+6. Access your public URL provided by Render.
+
+## Project Structure
+```
+app.py            # Flask web app
+requirements.txt  # Python dependencies
+render.yaml       # Render deployment config
+static/           # Downloaded audio files
+```
+
+## Notes
+- Render free tier is suitable for light usage and demos.
+- yt-dlp and ffmpeg are used for audio extraction; ensure your app complies with YouTube's terms of service.
+- For production, consider adding rate limiting and security features.
+
+---
+
+Enjoy extracting audio from YouTube with a single click!
+
+---
+
 # Audio Extractor & Transcription Tool
 
 A complete solution for downloading audio from YouTube and converting it to text using OpenAI Whisper.
