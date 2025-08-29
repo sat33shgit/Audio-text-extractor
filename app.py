@@ -4,6 +4,7 @@ import os
 import tempfile
 import threading
 import time
+import shutil
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Needed for flashing messages and session
@@ -109,7 +110,7 @@ def index():
             # Move file to static folder for download
             static_path = os.path.join('static', filename)
             os.makedirs('static', exist_ok=True)
-            os.replace(mp3_file, static_path)
+            shutil.move(mp3_file, static_path)
             return render_template_string(TEMPLATE, filename=filename)
         except Exception as e:
             flash(f"Error: {e}")
